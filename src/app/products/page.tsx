@@ -10,7 +10,18 @@ import FooterMedia from '@/components/sections/footer/FooterMedia';
 
 export default function ProductsPage() {
   return (
-    <ThemeProvider>
+    <ThemeProvider 
+      defaultButtonVariant="text-stagger" 
+      defaultTextAnimation="entrance-slide" 
+      borderRadius="rounded" 
+      contentWidth="medium" 
+      sizing="medium" 
+      background="circleGradient" 
+      cardStyle="glass-elevated" 
+      primaryButtonStyle="gradient" 
+      secondaryButtonStyle="glass" 
+      headingFontWeight="normal"
+    >
       <ReactLenis root>
         <NavbarLayoutFloatingOverlay
             navItems={[
@@ -63,7 +74,7 @@ export default function ProductsPage() {
             <FooterMedia 
                 logoText="Delightness"
                 imageSrc="http://img.b2bpic.net/free-photo/indoor-design-luxury-resort_23-2150497272.jpg"
-                columns={[{ title: "Links", items: [{ label: "Home", href: "/" }] }]}
+                columns={[{ items: [{ label: "Home", href: "/" }] }]}
             />
         </div>
       </ReactLenis>
