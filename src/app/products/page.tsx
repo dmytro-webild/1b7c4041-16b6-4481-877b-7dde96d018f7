@@ -74,7 +74,7 @@ export default function ProductsPage() {
             <FooterMedia 
                 logoText="Delightness"
                 imageSrc="http://img.b2bpic.net/free-photo/indoor-design-luxury-resort_23-2150497272.jpg"
-                columns={[{ items: [{ label: "Home", href: "/" }] }]}
+                columns={[{ title: "Navigation", items: [{ label: "Home", href: "/" }] }]}
             />
         </div>
       </ReactLenis>
