@@ -3,12 +3,11 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactCTA from '@/components/sections/contact/ContactCTA';
-import FeatureCardSixteen from '@/components/sections/feature/FeatureCardSixteen';
+import FeatureCardTwentyNine from '@/components/sections/feature/featureCardTwentyNine/FeatureCardTwentyNine';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
 import HeroSplitTestimonial from '@/components/sections/hero/HeroSplitTestimonial';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
 
 export default function LandingPage() {
@@ -68,14 +67,35 @@ export default function LandingPage() {
   </div>
 
   <div id="services" data-section="services">
-      <FeatureCardSixteen
+      <FeatureCardTwentyNine
       animationType="slide-up"
       textboxLayout="default"
-      useInvertedBackground={false}
-      negativeCard={{ items: ["Group Travel Logistics", "Luxury Accommodation Booking", "Premium Transport Services"] }}
-      positiveCard={{ items: ["Private Guided Tours", "Customized Itineraries", "24/7 VIP Concierge"] }}
-      title="Exclusive Services"
-      description="Tailored travel experiences designed to perfection."
+      gridVariant="three-columns-all-equal-width"
+      title="Destinations in Northern Pakistan"
+      description="Discover the breathtaking beauty and serenity of the Northern mountains."
+      features={[
+        { 
+            title: "Hunza Valley", 
+            description: "Experience the breathtaking views and rich culture of the heart of Hunza.", 
+            imageSrc: "http://img.b2bpic.net/free-photo/landscape-beautiful-valley-with-mountains_23-2148819448.jpg", 
+            titleImageSrc: "", 
+            buttonText: "Explore"
+        },
+        { 
+            title: "Skardu", 
+            description: "Discover high-altitude lakes and stunning rugged landscapes.", 
+            imageSrc: "http://img.b2bpic.net/free-photo/view-beautiful-mountain-landscape_23-2148819472.jpg", 
+            titleImageSrc: "", 
+            buttonText: "Explore"
+        },
+        { 
+            title: "Naran Kaghan", 
+            description: "Home to crystal clear lakes and lush green valleys.", 
+            imageSrc: "http://img.b2bpic.net/free-photo/mountain-lake-reflection_23-2148819420.jpg", 
+            titleImageSrc: "", 
+            buttonText: "Explore"
+        }
+      ]}
     />
   </div>
 
