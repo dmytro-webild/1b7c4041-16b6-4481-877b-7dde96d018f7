@@ -8,7 +8,6 @@ import FooterSimple from '@/components/sections/footer/FooterSimple';
 import HeroSplitTestimonial from '@/components/sections/hero/HeroSplitTestimonial';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
 
 export default function LandingPage() {
   return (
@@ -68,6 +67,7 @@ export default function LandingPage() {
 
   <div id="services" data-section="services">
       <FeatureCardTwentyNine
+      useInvertedBackground={false}
       animationType="slide-up"
       textboxLayout="default"
       gridVariant="three-columns-all-equal-width"
