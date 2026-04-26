@@ -30,6 +30,7 @@ export default function LandingPage() {
       <NavbarLayoutFloatingOverlay
       navItems={[
         { name: "Home", id: "home" },
+        { name: "Products", id: "/products" },
         { name: "About", id: "about" },
         { name: "Services", id: "services" },
         { name: "Contact", id: "contact" },
@@ -45,42 +46,15 @@ export default function LandingPage() {
       title="Travel in Luxury"
       description="Crafting unforgettable memories for the modern traveler. Experience the world with unmatched elegance, bespoke comfort, and professional guidance."
       testimonials={[
-        {
-          name: "Amina Khan",          handle: "@travel_enthusiast",          testimonial: "100% recommended! My journey with Delightness was flawless.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/young-traveler-man-with-blue-suitcase-looking-confident-smiling-with-happy-face-ready-travel-standing-white-background_141793-24113.jpg"},
-        {
-          name: "Elena Rossi",          handle: "@elena_globes",          testimonial: "A truly bespoke service that exceeded every expectation.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/woman-waving-with-copy-space_23-2148631403.jpg"},
-        {
-          name: "Marcus Thorne",          handle: "@mthorne",          testimonial: "Luxury redefined. Every detail of my trip was perfection.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/beautiful-young-blonde-woman-holding-vintage-camera-sticking-tongue-out-happy-with-funny-expression_839833-3025.jpg"},
-        {
-          name: "Sarah Jenkins",          handle: "@sjenkins_travel",          testimonial: "The best travel agency experience I have ever had.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/photo-smiling-cheerful-female-tourist-feels-good-from-stroll-across-city-wears-stylish-headgear-striped-jumper_273609-25751.jpg"},
-        {
-          name: "David Wu",          handle: "@dwu_wander",          testimonial: "Seamless, elegant, and professional from start to finish.",          rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/front-view-woman-posing-new-town_23-2148631400.jpg"},
+        { name: "Amina Khan", handle: "@travel_enthusiast", testimonial: "100% recommended! My journey with Delightness was flawless.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/young-traveler-man-with-blue-suitcase-looking-confident-smiling-with-happy-face-ready-travel-standing-white-background_141793-24113.jpg" },
+        { name: "Elena Rossi", handle: "@elena_globes", testimonial: "A truly bespoke service that exceeded every expectation.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/woman-waving-with-copy-space_23-2148631403.jpg" },
+        { name: "Marcus Thorne", handle: "@mthorne", testimonial: "Luxury redefined. Every detail of my trip was perfection.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/beautiful-young-blonde-woman-holding-vintage-camera-sticking-tongue-out-happy-with-funny-expression_839833-3025.jpg" },
+        { name: "Sarah Jenkins", handle: "@sjenkins_travel", testimonial: "The best travel agency experience I have ever had.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/photo-smiling-cheerful-female-tourist-feels-good-from-stroll-across-city-wears-stylish-headgear-striped-jumper_273609-25751.jpg" },
+        { name: "David Wu", handle: "@dwu_wander", testimonial: "Seamless, elegant, and professional from start to finish.", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/front-view-woman-posing-new-town_23-2148631400.jpg" },
       ]}
-      buttons={[
-        { text: "Explore Packages", href: "#packages" },
-        { text: "Book Now", href: "#contact" },
-      ]}
+      buttons={[{ text: "Explore Products", href: "/products" }, { text: "Book Now", href: "#contact" }]}
       imageSrc="http://img.b2bpic.net/free-photo/female-tourist-leaning-boat-travel-near-cliff_23-2148153858.jpg"
       mediaAnimation="slide-up"
-      avatars={[
-        { src: "http://img.b2bpic.net/free-photo/stylish-cool-man-with-ginger-beard-blue-eyes-green-swimming-glasses-printed-white-shirt-showing-peace-signs-orange-backdrop_197531-27686.jpg", alt: "A luxury traveler profile" },
-        { src: "http://img.b2bpic.net/free-photo/handsome-tourist-straw-hat-covering-face-from-sun-looking-distance-aside-smiling-pleased-t_1258-173882.jpg", alt: "A luxury traveler profile" },
-        { src: "http://img.b2bpic.net/free-photo/happy-african-young-lady-walking-outdoors-beach_171337-16228.jpg", alt: "A luxury traveler profile" },
-        { src: "http://img.b2bpic.net/free-photo/woman-traveling-with-backpack_53876-14387.jpg", alt: "A luxury traveler profile" },
-        { src: "http://img.b2bpic.net/free-photo/extreme-sports-healthy-lifestyle-concept-close-up-view-happy-smiling-young-bearded-surfer-carrying-surfboard-his-head-his-way-ocean_273609-1543.jpg", alt: "A luxury traveler profile" },
-      ]}
-      marqueeItems={[
-        { type: "text", text: "Bespoke Itineraries" },
-        { type: "text", text: "24/7 Concierge" },
-        { type: "text", text: "Exclusive Access" },
-        { type: "text", text: "Premium Comfort" },
-        { type: "text", text: "Expert Guidance" },
-      ]}
     />
   </div>
 
@@ -98,49 +72,10 @@ export default function LandingPage() {
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={false}
-      negativeCard={{
-        items: ["Group Travel Logistics", "Luxury Accommodation Booking", "Premium Transport Services"],
-      }}
-      positiveCard={{
-        items: ["Private Guided Tours", "Customized Itineraries", "24/7 VIP Concierge"],
-      }}
+      negativeCard={{ items: ["Group Travel Logistics", "Luxury Accommodation Booking", "Premium Transport Services"] }}
+      positiveCard={{ items: ["Private Guided Tours", "Customized Itineraries", "24/7 VIP Concierge"] }}
       title="Exclusive Services"
       description="Tailored travel experiences designed to perfection."
-    />
-  </div>
-
-  <div id="packages" data-section="packages">
-      <ProductCardFour
-      animationType="slide-up"
-      textboxLayout="default"
-      gridVariant="three-columns-all-equal-width"
-      useInvertedBackground={true}
-      products={[
-        { id: "1", name: "Maldives Paradise", price: "$2,500", variant: "Luxury", imageSrc: "http://img.b2bpic.net/free-photo/tropical-beach-with-waterbungalows-maldives_505751-5735.jpg" },
-        { id: "2", name: "Swiss Alpine Escape", price: "$3,200", variant: "Adventure", imageSrc: "http://img.b2bpic.net/free-photo/vertical-view-woman-chair-lift-french-alps-europe_268835-3601.jpg" },
-        { id: "3", name: "Bali Luxury Hideaway", price: "$1,800", variant: "Relaxation", imageSrc: "http://img.b2bpic.net/free-photo/woman-swimming-pool-jungle-view_1157-33596.jpg" },
-        { id: "4", name: "Parisian Romance", price: "$2,100", variant: "City", imageSrc: "http://img.b2bpic.net/free-photo/stylish-charming-brunette-darkskinned-lady-eyeglasses-beige-trench-coat-black-dress-smiles-waves-hand-greeting-holds-coffee-cup-outdoors_197531-29480.jpg" },
-        { id: "5", name: "Santorini Sunset", price: "$2,800", variant: "Scenic", imageSrc: "http://img.b2bpic.net/free-photo/wooden-bridge-pier-against-beautiful-sky_146671-18871.jpg" },
-        { id: "6", name: "Dubai Desert Royal", price: "$3,500", variant: "Exclusive", imageSrc: "http://img.b2bpic.net/free-photo/indoor-design-luxury-resort_23-2150497272.jpg" },
-      ]}
-      title="Featured Destinations"
-      description="Select from our most popular premium packages."
-    />
-  </div>
-
-  <div id="testimonials" data-section="testimonials">
-      <TestimonialCardTwelve
-      useInvertedBackground={false}
-      testimonials={[
-        { id: "1", name: "Sarah Ahmed", imageSrc: "http://img.b2bpic.net/free-photo/front-view-male-tourist-walking-with-backpack-pink-wall-color-emotions-tourist_140725-122599.jpg" },
-        { id: "2", name: "John Doe", imageSrc: "http://img.b2bpic.net/free-photo/close-up-hand-holding-happy-woman_23-2148687101.jpg" },
-        { id: "3", name: "Maria Garcia", imageSrc: "http://img.b2bpic.net/free-photo/portrait-happy-mother-hiking-with-children_74855-21411.jpg" },
-        { id: "4", name: "Faisal Shah", imageSrc: "http://img.b2bpic.net/free-photo/business-man-using-his-tablet_23-2148018692.jpg" },
-        { id: "5", name: "Elena Rossi", imageSrc: "http://img.b2bpic.net/free-photo/talkative-young-female-has-phone-conversation-with-friend_273609-25770.jpg" },
-      ]}
-      cardTitle="Client Voices"
-      cardTag="100% Recommended"
-      cardAnimation="blur-reveal"
     />
   </div>
 
@@ -151,32 +86,16 @@ export default function LandingPage() {
       tag="Let's Travel"
       title="Start Your Luxury Journey"
       description="We are available 24/7. Reach out to us at I-8 Markaz, Islamabad, Pakistan or via phone at +92 314 0526968."
-      buttons={[
-        { text: "WhatsApp Us", href: "https://wa.me/923140526968" },
-      ]}
+      buttons={[{ text: "WhatsApp Us", href: "https://wa.me/923140526968" }]}
     />
   </div>
 
   <div id="footer" data-section="footer">
       <FooterSimple
       columns={[
-        {
-          title: "Company",          items: [
-            { label: "About Us", href: "#about" },
-            { label: "Services", href: "#services" },
-          ],
-        },
-        {
-          title: "Contact",          items: [
-            { label: "+92 314 0526968", href: "tel:+923140526968" },
-            { label: "I-8 Markaz, Islamabad", href: "#contact" },
-          ],
-        },
-        {
-          title: "Availability",          items: [
-            { label: "Open 24/7", href: "#" },
-          ],
-        },
+        { title: "Company", items: [{ label: "About Us", href: "#about" }, { label: "Services", href: "#services" }] },
+        { title: "Contact", items: [{ label: "+92 314 0526968", href: "tel:+923140526968" }, { label: "I-8 Markaz, Islamabad", href: "#contact" }] },
+        { title: "Availability", items: [{ label: "Open 24/7", href: "#" }] },
       ]}
       bottomLeftText="© 2024 Delightness Tours & Travels"
       bottomRightText="All rights reserved."
