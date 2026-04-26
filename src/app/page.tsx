@@ -77,21 +77,21 @@ export default function LandingPage() {
         { 
             title: "Hunza Valley", 
             description: "Experience the breathtaking views and rich culture of the heart of Hunza.", 
-            imageSrc: "http://img.b2bpic.net/free-photo/landscape-beautiful-valley-with-mountains_23-2148819448.jpg", 
+            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Cta3tsFKM73S2wAu2CLgJo7ArO/uploaded-1777210102117-p1g353n9.jpg", 
             titleImageSrc: "", 
             buttonText: "Explore"
         },
         { 
             title: "Skardu", 
             description: "Discover high-altitude lakes and stunning rugged landscapes.", 
-            imageSrc: "http://img.b2bpic.net/free-photo/view-beautiful-mountain-landscape_23-2148819472.jpg", 
+            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Cta3tsFKM73S2wAu2CLgJo7ArO/uploaded-1777209966195-h9uusyeh.png", 
             titleImageSrc: "", 
             buttonText: "Explore"
         },
         { 
             title: "Naran Kaghan", 
             description: "Home to crystal clear lakes and lush green valleys.", 
-            imageSrc: "http://img.b2bpic.net/free-photo/mountain-lake-reflection_23-2148819420.jpg", 
+            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Cta3tsFKM73S2wAu2CLgJo7ArO/uploaded-1777210298109-saenqnen.jpg", 
             titleImageSrc: "", 
             buttonText: "Explore"
         }
